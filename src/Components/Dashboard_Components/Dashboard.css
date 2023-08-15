@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
 .Dashboard_main_div{
     display: flex;
 }
@@ -6,7 +9,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: rgb(225, 223, 223);
+    background-color: white;
     transition-duration: 1s;
 }
 
@@ -15,6 +18,15 @@
     display: flex;
     justify-content: center;
     margin-block: 10px;
+}
+
+.Sidebar_heading{
+    font-family: 'JetBrains Mono', monospace;
+    color: #000;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px; /* 100% */
 }
 
 .Dashboard_sidebar_ul{
@@ -29,12 +41,12 @@
 
 .Dashboard_sidebar_li{
     padding-block: 10px;
-    padding-inline: 10px;
+    padding-inline: 30px;
     display: flex;
     align-items: center;
     gap: 20px;
     cursor: pointer;
-    width: 100%;
+    color: grey;
 }
 
 .Dashboard_sidebar_li_active{
@@ -43,9 +55,8 @@
     gap: 20px;
     background-color: white;
     padding-block: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
+    padding-inline: 30px;
+    color: black;
 }
 
 .Dashboard_sidebar_li_active>p{
@@ -58,7 +69,7 @@
     transition-duration: 1s;
 }
 
-.Dashboard_sidebar_li_active>i{
+.Dashboard_sidebar_li_active>svg{
     transition-duration: 1s;
 }
 
@@ -78,7 +89,34 @@
 
 
 .Dashboard_right_div{
-    width: 80%;
+    width: 100%;
+}
+
+.Right_upper_div{
+    height: 25% ;
+    background-color: #BDC3C7;
+}
+
+.Right_upper_div_sec1{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.Right_upper_div_user{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 53px;
+}
+
+.UserName{
+    color: #566573;
+font-family: 'JetBrains Mono', monospace;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+margin: 0px;
 }
 
 
