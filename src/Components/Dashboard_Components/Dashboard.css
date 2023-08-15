@@ -1,0 +1,106 @@
+.Dashboard_main_div{
+    display: flex;
+}
+
+.Dashboard_side_bar{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(225, 223, 223);
+    transition-duration: 1s;
+}
+
+.Dashboard_btn_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-block: 10px;
+}
+
+.Dashboard_sidebar_ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Dashboard_sidebar_li{
+    padding-block: 10px;
+    padding-inline: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.Dashboard_sidebar_li_active{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding-block: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.Dashboard_sidebar_li_active>p{
+    margin: 0px;
+
+}
+
+.Dashboard_sidebar_li>i{
+    width: max-content;
+    transition-duration: 1s;
+}
+
+.Dashboard_sidebar_li_active>i{
+    transition-duration: 1s;
+}
+
+.Dashboard_sidebar_li>p{
+    margin: 0px;
+}
+
+
+.Sidebar_btn{
+    aspect-ratio: 1/1;
+    width: max-content;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+}
+
+
+.Dashboard_right_div{
+    width: 80%;
+}
+
+
+@media only screen and (max-width:600px) {
+    .Dashboard_sidebar_li{
+        padding-block: 10px;
+        padding-inline: 10px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    .Dashboard_sidebar_li_active{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-color: white;
+        padding-block: 10px;
+        padding-inline: 10px;
+
+        width: 100%;
+    }
+}
