@@ -14,50 +14,53 @@ import { TableVirtuoso } from 'react-virtuoso';
 
 const Location = ({State}) => {
     const sample = [
-        ['Frozen yoghurt', 159, 6.0, 24, 4.0],
-        ['Ice cream sandwich', 237, 9.0, 37, 4.3],
-        ['Eclair', 262, 16.0, 24, 6.0],
-        ['Cupcake', 305, 3.7, 67, 4.3],
-        ['Gingerbread', 356, 16.0, 49, 3.9],
+        ['Saran Associates', 'Thambaram,Chennai', 'Chennai', 24, 4.0],
+        ['Saran Associates',  'Thambaram,Chennai', 'Chennai', 37, 4.3],
+        ['Saran Associates',  'Thambaram,Chennai', 'Chennai', 24, 6.0],
+        ['Saran Associates',  'Thambaram,Chennai', 'Chennai', 67, 4.3],
+        ['Saran Associates',  'Thambaram,Chennai', 'Chennai', 49, 3.9],
     ];
 
-    function createData(id, dessert, calories, fat, carbs, protein) {
-        return { id, dessert, calories, fat, carbs, protein };
+    function createData(SNO, distributer, Address, City, Km, protein) {
+        return { SNO, distributer, Address, City, Km, protein };
     }
 
     const columns = [
         {
-            width: 200,
-            label: 'Dessert',
-            dataKey: 'dessert',
+            width: 20,
+            label: 'S.no',
+            dataKey: 'SNO',
+        },
+        {
+            width: 180,
+            label: 'Disrtibuter Name',
+            dataKey: 'distributer',
         },
         {
             width: 120,
-            label: 'Calories\u00A0(g)',
-            dataKey: 'calories',
+            label: 'Address',
+            dataKey: 'Address',
+        },
+        {
+            width: 120,
+            label: 'City',
+            dataKey: 'City',
+        },
+        {
+            width: 120,
+            label: 'Km Allocated',
+            dataKey: 'Km',
             numeric: true,
         },
         {
             width: 120,
-            label: 'Fat\u00A0(g)',
-            dataKey: 'fat',
-            numeric: true,
-        },
-        {
-            width: 120,
-            label: 'Carbs\u00A0(g)',
-            dataKey: 'carbs',
-            numeric: true,
-        },
-        {
-            width: 120,
-            label: 'Protein\u00A0(g)',
-            dataKey: 'protein',
+            label: 'Action',
+            dataKey: 'Action',
             numeric: true,
         },
     ];
 
-    const rows = Array.from({ length: 200 }, (_, index) => {
+    const rows = Array.from({ length: sample.length }, (_, index) => {
         const randomSelection = sample[Math.floor(Math.random() * sample.length)];
         return createData(index, ...randomSelection);
     });
@@ -67,7 +70,7 @@ const Location = ({State}) => {
             <TableContainer component={Paper} {...props} ref={ref} />
         )),
         Table: (props) => (
-            <Table {...props} sx={{ borderCollapse: 'separate', tableLayout: 'fixed' }} />
+            <Table {...props} sx={{ borderCollapse: 'collapse', tableLayout:'auto' }} />
         ),
         TableHead,
         TableRow: ({ item: _item, ...props }) => <TableRow {...props} />,

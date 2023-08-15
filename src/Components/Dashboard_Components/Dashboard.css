@@ -59,6 +59,29 @@ line-height: 18px; /* 100% */
     color: black;
 }
 
+.Sidebar_Logout_Div{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    padding-inline: 30px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.Logout_Txt{
+margin: 0px;
+color: #909497;
+font-family: 'JetBrains Mono', monospace;font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.Right_Lower_div{
+    background-color: 'red';
+}
+
 .Dashboard_sidebar_li_active>p{
     margin: 0px;
 
@@ -90,6 +113,7 @@ line-height: 18px; /* 100% */
 
 .Dashboard_right_div{
     width: 100%;
+    background-color: #ECF0F1;
 }
 
 .Right_upper_div{
