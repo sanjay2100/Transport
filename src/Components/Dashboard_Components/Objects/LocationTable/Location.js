@@ -19,6 +19,11 @@ const Location = ({State}) => {
         ['Saran Associates',  'Thambaram,Chennai', 'Chennai', 24, 6.0],
         ['Saran Associates',  'Thambaram,Chennai', 'Chennai', 67, 4.3],
         ['Saran Associates',  'Thambaram,Chennai', 'Chennai', 49, 3.9],
+        ['Saran Associates', 'Thambaram,Chennai', 'Chennai', 24, 4.0],
+        ['Saran Associates',  'Thambaram,Chennai', 'Chennai', 37, 4.3],
+        ['Saran Associates',  'Thambaram,Chennai', 'Chennai', 24, 6.0],
+        ['Saran Associates',  'Thambaram,Chennai', 'Chennai', 67, 4.3],
+        ['Saran Associates',  'Thambaram,Chennai', 'Chennai', 49, 3.9],
     ];
 
     function createData(SNO, distributer, Address, City, Km, protein) {
